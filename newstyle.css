@@ -1,0 +1,77 @@
+ body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fde7f0;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+    nav .links a:hover {
+      color: #c2187b;
+    }
+
+    /* Header Section */
+    .hero {
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 650px;
+      margin: 0.5rem auto;
+      font-size: 1.15rem;
+      line-height: 1.6;
+    }
+    .hero a {
+      color: #c2187b;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* Card Highlight */
+    .intro-card {
+      background: white;
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 6rem;
+      padding: 2rem;
+      text-align: center;
+      color: #555;
+    }
+    footer a {
+      margin: 0 0.5rem;
+      color: #444;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    footer a:hover {
+      color: #c2187b;
+    }

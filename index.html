@@ -10,56 +10,42 @@
     <title>Medha Bulumulla</title>
   </head>
 
-  <!-- Navigation -->
-  <div id ="nav-control-div"><button id="nav-control" class = "hidden"> <img src="images/menu.png"> </button></div>
-  <nav id = "small-navigation" class = "hidden"><ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "resume.html">Resume</a></li>
-      <li><a href = "portfolio.html">Portfolio</a></li>
-      <li><a href = "art.html">Art</a></li>
-  </ul> </nav>
-  <nav id = "wide-navigation"> <ul>
-    <li><a href = "index.html">Home</a></li>
-    <li><a href = "resume.html">Resume</a></li>
-    <li><a href = "portfolio.html">Portfolio</a></li>
-    <li><a href = "art.html">Art</a></li>
-  </ul></nav>
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="#" class="nav-logo">Medha</a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <div class="nav-links" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="art.html">Art</a>
+  </div>
+</nav>
+
+<script>
+function toggleMenu() {
+document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
 
   <body>
     <div class = "container">
-      <br>
-      <div class="jumbotron p-3 p-md-5 rounded bg-dark white">
-          <h1 class="display-4 font-italic special-font">Medha Bulumulla</h1>
-          <p class="lead my-3 ">
-            As a <b> Analyst</b>, I am passionate about data analytics and building accessible software applications. 
-          </p>
-          <p>
-            I hold a <b>Masters</b> and <b>Bachelors</b> in Information Science with a Data Science concentration from Cornell University.
-          </p> 
-          <p>
-            Take a look at my <a href = "resume.html">resume</a> to learn about my professional work 
-            and my <a href ="art.html">art</a> to see what I do in my free time.
-          </p>
+      <div class = "row">
+        <div class="col-sm-12 text-center">
+                  <p>I am a Customer Success Engineer at IBM with a passion for art.</p>
 
-          <!-- <p class="lead my-3 text-white">I just graduated with my <b>Masters of Professional Studies in Information Science at Cornell University</b> in December 2023 with Data Analysis and Application Development experience. I am currently on the job market.</p> -->
-          <!-- <p class="lead mb-0">Take a look at my most recent projects below...</p> -->
+          <!-- Add 4 pictures: one about IBM, Watercolor,  -->
+        <a href="resume.html">
+          <img class = "art" src="images/ibm-medha.jpg" alt = "Medha at IBM"/>
+        </a>
+        <a href="art.html">
+          <img class = "art" src="images/cards/gourd.png" alt = "Oh my gourd!"/> 
+        </a>
+
       </div>
-
-      <!-- <div class = "row">
-        <div class = "col-xs-9 col-sm-6 col-lg-6"><a href = "https://polite-sea-0fa39190f.4.azurestaticapps.net/" class = "portfolio">
-          <img class = "portfolio small-square" src="images/portfolio/class-register.png" width = "100px">
-          <h4 class = "portfolio-h4">Class Registration Web App</h4></a>
-          <p>Collaborating with a team of Microsoft back-end developers, front-end specialists, and UX researchers to architect and develop full-stack class registration system to meet user requirements, leveraging Microsoft Azure, SQL, GraphQL, REST API calls, Docker, Node.js, and Angular.js. The Blog post will be posted on Microsoft soon; the <a href = "https://github.com/MPS-Project-23/MPS_Project">repository</a> is publicly available. </p>
-        </div>
-
-        <div class = "col-xs-9 col-sm-6 col-lg-6"><a href = "https://cornell.digication.com/team04/home" class = "portfolio">
-          <img class = "portfolio small-square" src="images/portfolio/bis-logo.png">
-          <h4 class = "portfolio-h4">Data Management for Technology Center</h4></a>
-          <p>Developed dimensional data model via Wherecape, data dictionary, ETL source-to-target and produced analysis and <a href = "https://docs.google.com/presentation/d/1pDmTeX91lbf1SB_0sXwjTRNrTrx0pg7TdX4o3eXDofo/edit?usp=sharing">Tableau visualizations</a> of financial performance and customer scheduling cancellations for the University’s Biotechnology Technology Resource Center.</p>
-        </div>
-      </div>-->
     </div> 
 
+  
     <br>
     <footer class="blog-footer">
       <br>

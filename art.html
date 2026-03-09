@@ -11,21 +11,23 @@
     <title>Medha Bulumulla</title>
   </head>
 
-  <div id ="nav-control-div"><button id="nav-control" class = "hidden"> <img src="images/menu.png"> </button></div>
-  <nav id = "small-navigation" class = "hidden"><ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "resume.html">Resume</a></li>
-      <li><a href = "portfolio.html">Portfolio</a></li>
-      <li><a href = "art.html">Art</a></li>
-  </ul> </nav>
-  <nav id = "wide-navigation">
-      <ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "resume.html">Resume</a></li>
-      <li><a href = "portfolio.html">Portfolio</a></li>
-      <li><a href = "art.html">Art</a></li>
-  </ul>
-  </nav>
+  <!-- Navigation -->
+<nav class="navbar">
+  <a href="#" class="nav-logo">Medha</a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <div class="nav-links" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="art.html">Art</a>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+  }
+</script>
 
   <body>
 
@@ -41,7 +43,7 @@
     </div>
     <div class = "container">
       <div class = "row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 text-center">
         <img class = "art" src="images/cards/gourd.png" alt = "Oh my gourd!"/> 
         <img class = "art" src="images/cards/valentine-dino.png" alt="Dinosaur with Hearts"/> 
         <img class = "art" src="images/cards/con-cat-uation.png" alt="Graduation of Con-CAT-ulation"/> 
@@ -64,7 +66,7 @@
       <p class ="text-center">Most of my projects are made from thrifted curtains and fabric scraps to reduce textile waste. </p>
     </div>
     <div class = "row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 text-center">
         <img class = "art" src="images/sewing/harmony-dress.jpg">
         <img class = "art" src="images/sewing/fall-dress2.png">
         <!-- <img class = "art" src="images/sewing/grad-dress.png"> -->
@@ -83,11 +85,11 @@
     </div>
 
     <div class = "container transparent-background2">
-      <h2 class="text-center">Sewing Tutorials</h2>
+      <h2 class="text-center">Sewing Tutorials & Designs</h2>
     </div>
 
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 text-center">
       <a href = "images/sewing/designs/pants-tutorial2.png">
         <img class = "art" src="images/sewing/designs/pants-tutorial2-small.png">
       </a>
@@ -105,7 +107,7 @@
     </div>
 
     <div class = "row">
-      <div class="col-sm-12">
+      <div class="col-sm-12 text-center">
         <img class = "art" src="images/scrunchies/mellascrunchiesblue.png"/> 
         <img class = "art" src="images/scrunchies/hisbisus.jpg"/> 
         <img class = "art" src="images/scrunchies/starry night.jpg"> 

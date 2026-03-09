@@ -11,21 +11,24 @@
     <title>Medha Bulumulla</title>
   </head>
 
-  <div id ="nav-control-div"><button id="nav-control" class = "hidden"> <img src="images/menu.png"> </button></div>
-  <nav id = "small-navigation" class = "hidden"><ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "resume.html">Resume</a></li>
-      <li><a href = "portfolio.html">Portfolio</a></li>
-      <li><a href = "art.html">Art</a></li>
-  </ul> </nav>
-  <nav id = "wide-navigation">
-      <ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "resume.html">Resume</a></li>
-      <li><a href = "portfolio.html">Portfolio</a></li>
-      <li><a href = "art.html">Art</a></li>
-  </ul>
-  </nav>
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="#" class="nav-logo">Medha</a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <div class="nav-links" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="art.html">Art</a>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+  }
+</script>
+
   <body>
     
     

@@ -11,21 +11,23 @@
     <title>Medha Bulumulla</title>
   </head>
 
-  <div id ="nav-control-div"><button id="nav-control" class = "hidden"> <img src="images/menu.png"> </button></div>
-  <nav id = "small-navigation" class = "hidden"><ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "resume.html">Resume</a></li>
-      <li><a href = "portfolio.html">Portfolio</a></li>
-      <li><a href = "art.html">Art</a></li>
-  </ul> </nav>
-  <nav id = "wide-navigation">
-      <ul>
-      <li><a href = "index.html">Home</a></li>
-      <li><a href = "resume.html">Resume</a></li>
-      <li><a href = "portfolio.html">Portfolio</a></li>
-      <li><a href = "art.html">Art</a></li>
-  </ul>
-  </nav>
+  <!-- Navigation -->
+<nav class="navbar">
+  <a href="#" class="nav-logo">Medha</a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <div class="nav-links" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="art.html">Art</a>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+  }
+</script>
   <body>
     
     
@@ -38,7 +40,7 @@
       <br>
 
       <div class = "text-center"><h2>Development</h2></div><br>
-    <div class = "row">
+    <div class = "row text-center">
 
       <div class = "col-xs-9 col-sm-6 col-lg-4"><a href = "https://devblogs.microsoft.com/azure-sql/course-registration-project-with-azure-sql-database/" class = "portfolio-border">
         <img class = "portfolio small-square " src="images/portfolio/class-register.png" width = "200px">
@@ -73,7 +75,7 @@
     <br>
     <div class = "text-center"><h2>Data Visualizations</h2></div><br>
     
-    <div class = "row">
+    <div class = "row text-center">
       <p class = "portfolio-p">The visualizations were in created Javascript relying on <a href = "https://d3js.org/">D3.js</a>, a Javascript library.  </p>
       
 
@@ -118,7 +120,7 @@
     <br>
     <div class = "text-center"><h2>Research Work</h2></div><br>
 
-    <div class = "row">
+    <div class = "row text-center">
 
       <div class = "col-xs-9 col-sm-6 col-lg-4"><a href = "files/CUP-Slides.pdf" class = "portfolio-border">
         <img class = "portfolio" src="images/portfolio/cup-slides.png" width = "250px">
@@ -177,7 +179,7 @@
      
     <br>
     <div class = "text-center"><h2>Websites</h2></div><br>
-    <div class = "row">
+    <div class = "row text-center">
       <div class = "col-xs-9 col-sm-6 col-lg-4"><a href = "http://barrett.dyson.cornell.edu/" class = "portfolio-border">
         <img class = "portfolio" src="images/portfolio/cornell.png" width = "250px"><br>
         <h4 class = "portfolio-h4">Chris Barrett's Research Page</h4></a>
